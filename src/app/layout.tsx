@@ -1,9 +1,12 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import localFont from 'next/font/local';
 import Providers from "./components/providers";
-import Header from "./components/header";
 
-const inter = Inter({ subsets: ["latin"] });
+const pretendard = localFont({
+  src: './fonts/pretendard/public/variable/PretendardVariable.ttf',
+  display: 'swap',
+  variable: '--font-pretendard',
+});
 
 export const metadata = {
   title: "ImageKit Next.js Integration",
@@ -17,10 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={pretendard.className}>
         <Providers>
-          <Header />
-          <main className="container mx-auto px-4 py-8">{children}</main>
+          {children}
         </Providers>
       </body>
     </html>
