@@ -40,7 +40,7 @@ export default function Login() {
           height={50}
           className="mb-2"
         />
-        <h2 className="font-semibold text-2xl">Share Your Vision.</h2>
+        <h2 className="font-semibold text-2xl">Share with Strangers.</h2>
         <p className="text-xl font-semibold text-gray-400">
           Join my-reels and start sharing your reels today.
         </p>
