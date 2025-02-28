@@ -9,8 +9,9 @@ const sansSerif = localFont({
 });
 
 export const metadata = {
-  title: "ImageKit Next.js Integration",
-  description: "Demo of ImageKit integration with Next.js",
+  title: "My Reels - Start sharing reels today",
+  description: "Join my-reels and start sharing your reels today.",
+  icons: "/images/logo.svg"
 };
 
 export default function RootLayout({
