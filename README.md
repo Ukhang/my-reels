@@ -1,2 +1,2 @@
 # my-reels
-A cutting-edge Next.js platform designed for seamless video content management and sales with ImageKit integration. This solution offers smooth video uploads and secure payment processing.
+ Your collection of shared moments! Upload, manage, and relive your favorite reels anytime. Whether you're showcasing creativity, sharing experiences, or making viral content, this is your personal space for all your reel-worthy moments.
