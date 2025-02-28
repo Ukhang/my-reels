@@ -43,7 +43,7 @@ export default function Register() {
   };
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 pt-4 py-8 place-items-center min-h-[100vh]">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 pt-4 py-8 place-items-center mt-24">
       <Image
         src="/images/person.svg"
         alt="jumping man"
