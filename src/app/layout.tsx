@@ -2,8 +2,8 @@ import "./globals.css";
 import localFont from 'next/font/local';
 import Providers from "./components/providers";
 
-const pretendard = localFont({
-  src: './fonts/pretendard/public/variable/PretendardVariable.ttf',
+const sansSerif = localFont({
+  src: './fonts/sans-serif/variable/Leggibilmente.ttf',
   display: 'swap',
   variable: '--font-pretendard',
 });
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={pretendard.className}>
+      <body className={sansSerif.className}>
         <Providers>
           {children}
         </Providers>
