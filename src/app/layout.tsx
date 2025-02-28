@@ -1,6 +1,7 @@
 import "./globals.css";
 import localFont from 'next/font/local';
 import Providers from "./components/providers";
+import { Toaster } from "@/components/ui/sonner"
 
 const sansSerif = localFont({
   src: './fonts/sans-serif/variable/Leggibilmente.ttf',
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={sansSerif.className}>
         <Providers>
           {children}
+          <Toaster />
         </Providers>
       </body>
     </html>

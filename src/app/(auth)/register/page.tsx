@@ -2,24 +2,23 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { useNotification } from "@/app/components/notification";
 import Link from "next/link";
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
 
 export default function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const router = useRouter();
-  const { showNotification } = useNotification();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (password !== confirmPassword) {
-      showNotification("Passwords do not match", "error");
+      toast("Passwords do not match");
       return;
     }
 
@@ -36,13 +35,10 @@ export default function Register() {
         throw new Error(data.error || "Registration failed");
       }
 
-      showNotification("Registration successful! Please log in.", "success");
+      toast("Registration successful! Please log in.");
       router.push("/login");
     } catch (error) {
-      showNotification(
-        error instanceof Error ? error.message : "Registration failed",
-        "error"
-      );
+      toast(error instanceof Error);
     }
   };
 
