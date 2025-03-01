@@ -20,7 +20,7 @@ A modern video-sharing platform built with **Next.js**, **MongoDB**, and **Image
 
 ### 1️⃣ Clone the Repository  
 ```bash
-git clone https://github.com/your-username/my-reels-app.git
+git clone https://github.com/Ukhang/my-reels.git
 cd my-reels-app
 ```
 
