@@ -48,7 +48,7 @@ const Sidebar = () => {
         prefetch={true}
         onClick={() => toast("Welcome to My Reels!")}
       >
-        <Image src={"/images/logo.svg"} alt="logo" width={30} height={30} />
+        <Image src={"/images/logo.png"} alt="logo" width={30} height={30} />
         My Reels
       </Link>
       <ul className="mt-4 flex flex-col gap-1 pb-6">

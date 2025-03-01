@@ -12,7 +12,7 @@ const sansSerif = localFont({
 export const metadata = {
   title: "My Reels - Start sharing reels today",
   description: "Join my-reels and start sharing your reels today.",
-  icons: "/images/logo.svg"
+  icons: "/images/logo.png"
 };
 
 export default function RootLayout({

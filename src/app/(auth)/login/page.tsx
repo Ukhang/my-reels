@@ -34,7 +34,7 @@ export default function Login() {
     <div className="grid grid-cols-1 gap-4 pt-4 py-8 place-items-center mt-24">
       <div className="w-full max-w-sm">
         <Image
-          src="/images/logo.svg"
+          src="/images/logo.png"
           alt="logo"
           width={50}
           height={50}
