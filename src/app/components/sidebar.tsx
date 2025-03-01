@@ -41,7 +41,7 @@ const Sidebar = () => {
   };
 
   return (
-    <aside className="w-56 h-screen p-4 bg-white border-r flex flex-col">
+    <aside className="w-56 p-4 bg-white border-r flex flex-col fixed top-0 left-0 h-full">
       <Link
         href={"/"}
         className="flex items-center gap-2 font-semibold text-lg px-2 py-2"
