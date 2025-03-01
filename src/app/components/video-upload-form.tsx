@@ -7,6 +7,9 @@ import { Loader2 } from "lucide-react";
 import { useNotification } from "./notification";
 import { apiClient } from "@/lib/api-client";
 import FileUpload from "./file-upload";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
 
 interface VideoFormData {
   title: string;
@@ -72,40 +75,42 @@ export default function VideoUploadForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-      <div className="form-control">
-        <label className="label">Title</label>
-        <input
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-2">
+      <div>
+        <h2 className="font-semibold text-2xl">Share your reels</h2>
+        <p className="text-xl font-semibold text-gray-400">with stranger.</p>
+      </div>
+      <div className="space-y-1">
+        <label htmlFor="Title" className="text-sm text-gray-400">
+          Title
+        </label>
+        <Input
           type="text"
-          className={`input input-bordered ${
-            errors.title ? "input-error" : ""
-          }`}
           {...register("title", { required: "Title is required" })}
         />
         {errors.title && (
-          <span className="text-error text-sm mt-1">
-            {errors.title.message}
-          </span>
+          <span className="text-red-500 text-sm">{errors.title.message}</span>
         )}
       </div>
 
-      <div className="form-control">
-        <label className="label">Description</label>
-        <textarea
-          className={`textarea textarea-bordered h-24 ${
-            errors.description ? "textarea-error" : ""
-          }`}
+      <div className="space-y-1">
+        <label htmlFor="Description" className="text-sm text-gray-400">
+          Description
+        </label>
+        <Textarea
           {...register("description", { required: "Description is required" })}
         />
         {errors.description && (
-          <span className="text-error text-sm mt-1">
+          <span className="text-red-500 text-sm">
             {errors.description.message}
           </span>
         )}
       </div>
 
-      <div className="form-control">
-        <label className="label">Upload Video</label>
+      <div className="space-y-1">
+        <label htmlFor="File" className="text-sm text-gray-400">
+          Upload Video
+        </label>
         <FileUpload
           fileType="video"
           onSuccess={handleUploadSuccess}
@@ -121,11 +126,7 @@ export default function VideoUploadForm() {
         )}
       </div>
 
-      <button
-        type="submit"
-        className="btn btn-primary btn-block"
-        disabled={loading || !uploadProgress}
-      >
+      <Button type="submit" disabled={loading || !uploadProgress}>
         {loading ? (
           <>
             <Loader2 className="w-4 h-4 mr-2 animate-spin" />
@@ -134,7 +135,7 @@ export default function VideoUploadForm() {
         ) : (
           "Publish Video"
         )}
-      </button>
+      </Button>
     </form>
   );
 }
