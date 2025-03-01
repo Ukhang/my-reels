@@ -49,7 +49,7 @@ export default function Header() {
                 className="dropdown-content z-[1] shadow-lg bg-base-100 rounded-box w-64 mt-4 py-2"
               >
                 {session ? (
-                  <>
+                  <>  
                     <li className="px-4 py-1">
                       <span className="text-sm opacity-70">
                         {session.user?.email?.split("@")[0]}
