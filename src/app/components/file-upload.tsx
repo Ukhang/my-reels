@@ -79,6 +79,9 @@ export default function FileUpload({
         validateFile={validateFile}
         useUniqueFileName={true}
         folder={fileType === "video" ? "/videos" : "/images"}
+        style={{
+          color: "gray"
+        }}
       />
 
       {uploading && (
