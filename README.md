@@ -71,7 +71,8 @@ Visit **http://localhost:3000** to see your app in action! 🚀
 ---
 
 ## Screenshots
-![screenshot](https://github.com/user-attachments/assets/349cd8a7-4b68-4239-a2e3-17cde03a5147)
+
+![screenshoot](https://github.com/user-attachments/assets/c8c61486-f4e3-42ab-b1cc-1eb44f9d48cf)
 
 ---
 
