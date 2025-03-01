@@ -41,7 +41,7 @@ export default function VideoComponent({ video }: { video: IVideo }) {
               {video.description.length > maxDesLength && (
                 <button
                   onClick={() => setExpandedDes((prev) => !prev)}
-                  className="hover:underline ml-4"
+                  className="hover:underline"
                 >
                   {expandedDes ? "less" : "more"}
                 </button>
