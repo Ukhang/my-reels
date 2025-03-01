@@ -9,10 +9,10 @@ export default function VideoComponent({ video }: { video: IVideo }) {
   const maxDesLength = 10;
 
   return (
-    <div className="">
-      <figure>
+    <div className="max-sm:flex max-sm:justify-center max-sm:items-center max-sm:min-h-screen">
+      <figure className="">
         <div
-          className="overflow-hidden relative h-screen group"
+          className="overflow-hidden relative sm:h-screen group"
           style={{ aspectRatio: "9/16" }}
         >
           <IKVideo
