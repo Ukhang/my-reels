@@ -3,13 +3,14 @@
 import { IKVideo } from "imagekitio-next";
 import { IVideo } from "@/models/Video";
 import { useState } from "react";
+import ProfileAvatar from "./profile-avatar";
 
 export default function VideoComponent({ video }: { video: IVideo }) {
   const [expandedDes, setExpandedDes] = useState(false);
   const maxDesLength = 10;
 
   return (
-    <div className="">
+    <div className="flex items-end gap-2">
       <figure>
         <div
           className="overflow-hidden relative h-screen group"
@@ -50,6 +51,9 @@ export default function VideoComponent({ video }: { video: IVideo }) {
           </div>
         </div>
       </figure>
+      <div className="py-4">
+        <ProfileAvatar/>
+      </div>
     </div>
   );
 }

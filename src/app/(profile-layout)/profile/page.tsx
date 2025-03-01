@@ -11,7 +11,7 @@ export default function ProfilePage() {
   return (
     <div className="p-4 flex flex-col items-center justify-center min-h-screen">
       <div className="flex items-center gap-2">
-        <ProfileAvatar/>
+        <ProfileAvatar/>  
         <span className="font-medium">
           {session && session.user?.email?.split("@")[0]}
         </span>
