@@ -106,7 +106,7 @@ const Sidebar = () => {
         </div>
       </aside>
 
-      <aside className="p-4 bg-white border-r flex items-center lg:hidden flex-col fixed top-0 left-0 h-full">
+      <aside className="sm:p-4 py-4 px-2 bg-white border-r flex items-center lg:hidden flex-col fixed top-0 left-0 h-full">
         <Link
           href={"/"}
           className="flex items-center gap-2 font-semibold text-lg"
