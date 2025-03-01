@@ -70,9 +70,8 @@ Visit **http://localhost:3000** to see your app in action! 🚀
 
 ---
 
-## Screenshots  
-
-_Add screenshots of your app UI here._  
+## Screenshots
+![screenshot](https://github.com/user-attachments/assets/349cd8a7-4b68-4239-a2e3-17cde03a5147)
 
 ---
 
