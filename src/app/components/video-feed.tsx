@@ -7,6 +7,7 @@ interface VideoFeedProps {
 }
 
 export default function VideoFeed({ videos }: VideoFeedProps) {
+  console.log(videos);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Handle moving to the previous video

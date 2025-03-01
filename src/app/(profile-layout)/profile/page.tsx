@@ -4,9 +4,14 @@ import { useSession } from "next-auth/react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { AlertDialogFooter } from "@/components/ui/alert-dialog";
 import ProfileAvatar from "@/app/components/profile-avatar";
+import { redirect } from "next/navigation";
 
 export default function ProfilePage() {
   const { data: session } = useSession();
+  
+    if (!session) {
+      redirect("/login");
+    }
 
   return (
     <div className="p-4 flex flex-col items-center justify-center min-h-screen">
