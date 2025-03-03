@@ -1,4 +1,6 @@
-# My Reels  
+# My Reels
+
+![screenshoot](https://github.com/user-attachments/assets/c8c61486-f4e3-42ab-b1cc-1eb44f9d48cf)
 
 **Share with Strangers. Watch, Create, and Explore.**  
 
@@ -67,12 +69,6 @@ Visit **http://localhost:3000** to see your app in action! 🚀
 1. Link the repository to Netlify.  
 2. Set the build command to `next build`.  
 3. Set the environment variables in **Netlify Dashboard**.  
-
----
-
-## Screenshots
-
-![screenshoot](https://github.com/user-attachments/assets/c8c61486-f4e3-42ab-b1cc-1eb44f9d48cf)
 
 ---
 
